@@ -1,0 +1,19 @@
+body{
+    background-color:  #CBD6CB;
+}
+.mid{
+    text-align: centre;
+}
+.container{
+    margin:auto;
+}
+/* .bottomsec,.midsec{
+    display: flex;
+    justify-content: space-between;
+} */
+.midSec, .bottomSec{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+.
