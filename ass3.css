@@ -1,0 +1,32 @@
+/* .heading{
+    text-align: center;
+    font-size: medium;
+} */
+.left{
+    text-align: left;
+    font-size: smaller;
+    /* width: 170px; */
+}
+.right{
+    text-align: right;
+    font-size: smaller;
+    /* width: 274px; */
+}
+.center{
+    text-align: center;
+    font-size: smaller;
+    /* width: 148px; */
+}
+  table {
+  border: 1px solid black;
+  border-collapse:collapse ;
+} 
+td,tr{
+    border: 1px solid black;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
