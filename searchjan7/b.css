@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aquamarine;
+    /* font-family:"roboto",sans-serif; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0%;
+}
+
+.search .input{
+    background-color: white;
+    font-size: small;
+    padding: 10px;
+    height: 45px;
+    width: 45px;
+    transition: transform 0.3s ease;
+    border:0;
+}
+.btn{
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    padding: 10px;
+    font-size: small;
+    border: 0;
+    /* top:0; */
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.search{
+    position:relative;
+}
+.search.active .input{
+    width: 200px;
+}
+.search.active .btn{
+    transform: translateX(200px);
+}
+.btn:focus, .input:focus{
+    outline: none;
+}
