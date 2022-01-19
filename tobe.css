@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.toggle{
+    displat:flex;
+    align-items: center;
+    margin:10px 0;
+    width:200px;
+}
+.label{
+    position:relative;
+    background-color: aliceblue;
+    border-radius: 50px;
+    cursor:pointer;
+    display: inline-block;
+    margin:0 15px 0;
+    width:80px;
+    height:40px;
+}
+
+.ball{
+    background: white;
+    height:30px;
+    width:34px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    animation:
+}
+(arr.sort(a.b)=>a-b)
+let newArr= arr.filter(function(element)){
+    if ([element]==[element+1]){
+        delete newArr[element];
+        console.log(newArr);
+    }
+}

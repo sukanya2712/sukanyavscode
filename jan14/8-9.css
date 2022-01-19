@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: "roboto",sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    overflow:hidden;
+    margin:0;
+}
+
+div{
+    position:absolute;
+    bottom:20px;
+    padding:15px;
+    font-size:20px;
+    
+
+}

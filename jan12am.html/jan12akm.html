@@ -1,0 +1,20 @@
+4.every
+whether all the elements in that array pass/satisfies particular cond or not
+
+(5.SOME atleast one satisfies the condition )
+LET x=[1,2,3,4]
+let exist=x.SOME(function(element)){
+    return element%2===0
+}
+
+
+console.log('no')
+
+let exist=x.some(e=> {
+    for(let div=2;div*div<=e;div++){
+        e%2===0
+        count++
+    }
+    
+})
+<!--          -->

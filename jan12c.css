@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+.squre{
+    background-color: ;
+
+}
+body{
+    background:#111;
+    display:flex;
+    align-items: center;
+    height: 100vh;
+    overflow:hidden;   
+
+}
