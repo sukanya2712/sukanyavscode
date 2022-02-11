@@ -1,0 +1,5 @@
+const pScore=document.getElementById("pkayscore")
+const pScore=document.getElementById("pkayscore")
+const pScore=document.getElementById("pkayscore")
+const pScore=document.getElementById("pkayscore")
+const pScore=document.getElementById("pkayscore")

@@ -3,21 +3,36 @@
 }
 
 body{
-    background-color: aliceblue;
-    font-family: "roboto",sans-serif;
+    background-color: yellowgreen;
     display:flex;
-    align-items:center;
-    justify-content:center;
-    height:100vh;
-    overflow:hidden;
-    margin:0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* transform:translateY(100vh); */
 }
 
-div{
-    position:absolute;
-    bottom:20px;
-    padding:15px;
-    font-size:20px;
-    
+#bottom{
 
+    transform: translateY(80vh);
+
+    background: rgba(0, 0, 0, 0.1);
+    padding: 1px 10px 1px 10px;
+    font-size: 20px;
+}
+
+#heading{
+    transform: translateY(50vh);
+    font-size: 3rem;
+
+}
+
+
+
+input{
+    padding: 5 px;
+    width:60px;
+    font-size: 20px;
+    border:none;
+    text-align: center;
+    background-color: yellowgreen;
 }

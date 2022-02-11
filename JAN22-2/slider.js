@@ -1,0 +1,1 @@
+const sliderContainer =document.querySelectorAll(".slider-"

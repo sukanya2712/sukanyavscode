@@ -1,0 +1,25 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    width:50%;
+    margin:
+}
+
+
+let arr = [1,2,3,5]
+
+var num=0;
+arr.forEach(function(element){
+    var num =num+elemnt;
+    
+})
+
+var sum=0;
+for(int i=0;i<=5;i++){
+    sum = sum+i;
+}
+
+console.log(num-sum);
+
