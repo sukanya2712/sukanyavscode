@@ -1,15 +1,15 @@
 const song = document.querySelector(".song");
 const play = document.querySelector(".play");
 const replay = document.querySelector(".replay");
-const outline = document.querySelector(".outline circle");
-const video = document.querySelector(".video");
+const outline = document.querySelector(".moving-outline circle");
+const video = document.querySelector(".vid-container video");
 //Sounds
-const sounds = document.querySelectorAll(".sound button");
+const sounds = document.querySelectorAll(".sound-picker button");
 //Time Display
-const timeDisplay = document.querySelector(".display");
+const timeDisplay = document.querySelector(".time-display");
 const outlineLength = outline.getTotalLength();
 //Duration
-const timeSelect = document.querySelectorAll(".time button");
+const timeSelect = document.querySelectorAll(".time-select button");
 let fakeDuration = 600;
 
 outline.style.strokeDashoffset = outlineLength;
@@ -37,8 +37,8 @@ replay.addEventListener("click", function() {
 
 
 const restartSong = song =>{
-  song.currentTime = 0;
-  var currentTime=song.currentTime
+    let currentTime = song.currentTime;
+    song.currentTime = 0;
     console.log("ciao")
 
 }
@@ -56,11 +56,11 @@ const checkPlaying = song => {
   if (song.paused) {
     song.play();
     video.play();
-    play.src = "./svg/pause.svg";
+    play.src = "./assets/svg/pause.svg";
   } else {
     song.pause();
     video.pause();
-    play.src = "./svg/play.svg";
+    play.src = "./assets/svg/play.svg";
   }
 };
 
@@ -76,7 +76,7 @@ song.ontimeupdate = function() {
   if (currentTime >= fakeDuration) {
     song.pause();
     song.currentTime = 0;
-    play.src = "./svg/play.svg";
+    play.src = "./assets/svg/play.svg";
     video.pause();
   }
-}
+};
