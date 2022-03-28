@@ -24,6 +24,7 @@ p{
     font-size: 1.17em;
 }
 .bigcup{
+    
     display: flex;
     flex-direction: column;
     height: 330px;
