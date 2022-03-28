@@ -28,6 +28,7 @@ function highlightcups(index){
 
     })
     updatebigcup()
+    
 }
 function updatebigcup(){
     const fullcups=document.querySelectorAll(".smallcups.full").length
