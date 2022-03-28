@@ -9,6 +9,8 @@ smallcups.forEach((cups,index)=>{
         highlightcups(index)
     })
 })
+
+
 updatebigcup()
 
 function highlightcups(index){
