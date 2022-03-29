@@ -1,46 +1,66 @@
-const message=document.querySelectorAll(".message")
-const button=document.querySelector("button")
-const gameArea=document.querySelector(".gameArea")
-const results=document.querySelector(".results")
-const directions=document.querySelectorAll(".directions")
+const submit=document.querySelector("#subt")
+const userInput=document.querySelector("#guessField")
+const guessSlot=document.querySelector(".guesses")
+const remaining=document.querySelector(".lastResult")
+const startOver=document.querySelector(".resultParas")
+const loworHi=document.querySelector(".loworHi")
 
-let inPlay=false;
-let count=0;
-let playArea={}
-
-function showMessage(notification){
-  message.innerhtml=`<h3>${notification}</h3>`
-}
-
-function random(number){
-    let val=Math.floor(Math.random()*number)
-    return val;
-}
-
-function myBox() {
-   let element = document.createElement("div")
-   element.classList.add("box");
-
-   element.style.top=random(setTopMargin())+'px';
-   element.style.left=random(setLeftMargin())+'px';
-
-   element.style.backgroundColor=getcolor()
-}
-
-
-
-function showbox(){
-   playArea.timer= setTimeout(myBox,random(4000))
-}
-showMessage("click start to begin")
-
-button.addEventListener("click",function(){
-   inPlay = true;
-   button.style.display = "none"
-   directions.style.display="none";
-   results.innerhtml=''
-   count=0;
-
-   showMessage("starting...")
-   showbox()
+let previousGuesses=[]
+let numGuesses=0
+let random=parseInt(Math.random()*100+1)
+//console.log(random)
+let maxGuesses=10
+submit.addEventListener("click",(e)=>{
+    e.preventDefault()
+    const guess=parseInt(userInput.value)
+    validateGuess(guess)
 })
+function validateGuess(guess){
+    previousGuesses.push(guess)
+    if(previousGuesses.length-1===maxGuesses){
+        displayGuesses(guess)
+        displayMsg(`Game over! Number is ${random}`);
+        endGame();
+    }else{
+        displayGuesses(guess)
+        checkGuess(guess)
+    }
+}
+function displayGuesses(guess){
+    guessSlot.innerHTML+=`${guess} `
+    userInput.value=''
+    numGuesses++
+    let remainingGuesses=maxGuesses-numGuesses
+    if(remainingGuesses<0){
+        remainingGuesses=0
+    }
+    remaining.innerHTML=remainingGuesses
+
+}
+function displayMsg(message){
+    loworHi.innerHTML=`<h1>${message}</h1>`
+}
+function checkGuess(guess){
+    if(guess===random){
+        displayMsg(`You guessed Correctly`);
+        endGame();
+    }else if(guess<random){
+        displayMsg('Too low! Try a high number')
+    }else{
+        displayMsg('Too High! Try a low number')
+    }
+}
+const pEl=document.createElement("p")
+function endGame(){
+    userInput.value=''
+    pEl.classList.add("button")
+    pEl.style.cursor="pointer"
+    pEl.innerHTML=`<h1 onclick="newfunc()">Start New Game!</h1>`
+    startOver.appendChild(pEl)
+    userInput.disabled=true
+    submit.disabled=true
+
+}
+function newfunc(){
+    location.reload()
+}

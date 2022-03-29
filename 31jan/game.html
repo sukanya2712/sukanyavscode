@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" class="css">
+    <title>Number Guessing</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="direction">
-      Click the following circles within 2 sec to score,
-      <br>
-      Get 15 points to win
-      <br>
-      ( The wider your screen ,the harder the game )
+    <h1>Number guessing game</h1>
+    <p>Try and guess a random number between 1 and 100.</p>
+    <p>You have 10 attempts to guess the right number</p>
+
+    <div id="wrapper">
+        <form class="form">
+            <label for="guessField" id="guess">Guess a number</label>
+            <input type="text" id="guessField" class="guessField">
+            <input type="submit" id="subt" value="Submit guess" class="guessSubmit">
+        </form>
+        <div class="resultParas">
+            <p>Previous Guesses: <span class="guesses"></span></p>
+            <p>Guesses Remaining: <span class="lastResult"></span></p>
+            <p class="loworHi"></p>
+        </div>
     </div>
-    <button type="button">start</button>
-    <div class="message"></div>
-    <div class="results"></div>
-    <div class="gameArea">
-        <div class="box"></div> </div>
-   <script src="script.js" ></script>
+    <script src="script.js"></script>
 </body>
 </html>
