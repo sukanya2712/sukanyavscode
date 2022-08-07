@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display:flex;
+   
+    align-items: center;
+    justify-content: center;
+    height:80vh;
+}
+
+body{
+    background-color: lavender;
+}
+
+#open{
+    /* position:absolute; */
+    height:20px;
+    width:140px;
+}
+
+button{
+    position: relative;
+    left:0;
+    /* top:0; */
+    top:0;
+    height:20px;
+}
