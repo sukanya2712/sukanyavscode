@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" class="rel">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+         <div id="header">
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                    <i class="fa-solid fa-car"></i>
+                    <h4 class="white" style="margin-left:1rem"}>AUTOMOTIVE</h4>
+                   </div>
+                   <ul class="navlist" id="sidemenu">
+                    <li>
+                        <a href="#" >HOME</a>
+                    </li>
+                    <li>
+                        <a href="#about" >FEATURES</a>
+                    </li>
+                    <li>
+                        <a href="#prices" >PRICE</a>
+                    </li>
+                    <li>
+                        <a href="#contact" >CONTACT</a>
+                    </li>
+                    <li>
+                       <a href="#Book Appoinment" >BOOK APPOINMENT</a>
+                    </li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1 class="blue">Your Car Service</h1>
+                    <p>visit us for your car</p>
+                    <a href="#Book Appoinment" class="ton" id="me">Book Appoinment </a>
+                </div>
+                
+            </div>
+         </div>
+          
+         <footer class="bottomfooter">
+            <div class="footer-col">
+                <h4 class="blue">our location</h4>
+                    <ul>
+                        <li class="white">
+                            15 STreet Suburt Country 6000
+                        </li>
+                    </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="blue">Phone</h4>
+                <ul>
+                    <li class="white">
+                        +61 040 400 4000
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="blue">Email</h4>
+                <ul>
+                    <li class="white">
+                        automotive@carsales.com.au
+                    </li>
+                </ul>
+            </div>
+        </footer>
+         
+
+         <div id="about" class="spacewaste">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./car-front-png-32705.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title" style="color:#00d4ff">FEATURES</h1>
+                        <p>AUTOMOTIVE is a network of technology-enabled car service centres, offering a seamless service experience at the convenience of a tap. With our highly skilled technicians, manufacturer recommended procedures and the promise of genuine spare parts, we are your best bet.</p>
+                         
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('smooth service')">smooth service</p>
+                            <p class="tab-links " onclick="opentab('24*7 service')">24*7 service</p>
+                            <p class="tab-links " onclick="opentab('All payment methods')">All payment method accepted</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="smooth service">
+                            <ul>
+                                <li><span>AC Service</span><br>cleaning,maintaing,replacemnt</li>
+                                <li><span>Periodic Service</span><br>cleaning,maintaing,replacemnt</li>
+                                <li><span>Regular Service</span><br>cleaning,maintaing,replacemnt</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="24*7 service">
+                            <ul>
+                                <li><span>AC Service</span><br>cleaning,maintaing,replacemnt</li>
+                                <li><span>Periodic Service</span><br>cleaning,maintaing,replacemnt</li>
+                                <li><span>Regular Service</span><br>cleaning,maintaing,replacemnt</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="All payment methods">
+                            <ul>
+                                <li><span>AC Service</span><br>cleaning,maintaing,replacemnt</li>
+                                <li><span>Periodic Service</span><br>cleaning,maintaing,replacemnt</li>
+                                <li><span>Regular Service</span><br>cleaning,maintaing,replacemnt</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+         </div>
+
+
+
+         <div id="prices" class="spacewaste">
+             <div class="container">
+                <h1 class="sub-title" class="blue" >PRICE</h1>
+                <div class="prices-list">
+                    <div style="background-color:#00d4ff">
+                        <h2>Periodic Service</h2>
+                        <p>Improves Car's Performance </p>
+                        <a href="#"><i class="fa-solid fa-badge-dollar"></i>10,000k</a>
+                    </div>
+
+                   <div style="background-color:#00d4ff">
+                    <h2>Car Detailing</h2>
+                    <p>Enhace Car's Valkue By 30%</p>
+                    <a href="#">10,000</a>
+                     </div>
+                   <div style="background-color:#00d4ff">
+                    <h2>High Performance AC Service </h2>
+                    <p>Gurented Better Cooling</p>
+                    <a href="#">10,000k</a>
+                    </div>
+             </div>
+         </div>
+        </div>
+
+        <div id="contact" class="spacewaste">
+        <div class="contact_container container grid">
+            <div class="contact_content">
+                <h3 class="contact_title" class="blue" >CONTACT US</h3>
+
+                <div class="contact_info">
+
+                   <div class="contact_card" style="background-color:#00d4ff">
+                     <i class="bx bxl-gmail contact_card-icon"></i>
+                     <h3 class="contact_card-title">Email</h3>
+                     <span class="contact_card-data">sukanyanaik511@gmail.com</span>
+                   </br>
+                     <a href="mailto:sukanyanaik511@gmail.com" target="_blank" class="contact_button">
+                         Write me<i class="bx bx-right-arrow-alt contact_button-icon"></i>
+                     </a>
+                    </div>
+
+                    <div class="contact_card" style="background-color:#00d4ff">
+                     <i class="bx bxl-whatsapp contact contact_card-icon"></i>
+                     <h3 class="contact_card-title">Whatsapp</h3>
+                     <span class="contact_card-data">+61 040 400 4000</span>
+                    </br>
+                     <a href="" target="_blank" class="contact_button">
+                         Write me<i class="bx bx-right-arrow-alt contact_button-icon"></i>
+                     </a>
+                 </div>
+
+                 
+              </div>
+            </div>
+         </div>
+        </div>
+
+         <div id="Book Appoinment" class="spacewaste">
+            <div class="container">
+                <h3 class="contact_title" >BOOK APPOINMENT</h3>
+                <form name="submit-to-google-sheet">
+                    <label for="fname" style="color:#00d4ff">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                    <label for="lname" style="color:#00d4ff">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                
+                    <label for="country" style="color:#00d4ff">Choose Service</label>
+                    <select id="country" name="country">
+                        <option value="australia">Choose one from following</option>
+                      <option value="AC servicing">AC Sevicing</option>
+                      <option value="Detailed Cleaning">Detailed Cleaning</option>
+                      <option value="Periodic Cleaning">Periodic Cleaning</option>
+                    </select>
+                  
+                    <button type="submit" id="btndone" >SUBMIT</button>
+                  </form>
+                 <span id="msg">Get in Touch !</span>
+            </div>
+            
+         </div>
+
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- <nav>
+        <div class="automotive">
+            <i class="fa-solid fa-car"></i>
+           
+            <h4 class="white" style="margin-left:1rem"}>AUTOMOTIVE</h4>
+           
+        </div>
+        <ul class="navlist">
+            <li>
+                <a href="#" class="white">HOME</a>
+                <div class="sections" id="#">
+                    <div class="background">
+                        <img src="./wp5177838.jpg">
+                    </div>
+                    <div class="midsec">
+                        <h5 class="blue">Your car Service</h5>
+                        <h3 class="white">visit us for your car </h3>
+                        <button class="ton">Book Appoinment</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="white">FEATURES</a>
+            </li>
+            <li>
+                <a href="#" class="white">PRICE</a>
+            </li>
+            <li>
+                <a href="#" class="white">CONTACT</a>
+            </li>
+            <li>
+               <button href="#" class="tonn">Book Appoinment</button>
+            </li>
+        </ul>
+    </nav>
+
+    <footer>
+        <div class="footer-col">
+            <h4 class="blue">our location</h4>
+                <ul>
+                    <li class="white">
+                        15 STreet Suburt Country 6000
+                    </li>
+                </ul>
+        </div>
+        <div class="footer-col">
+            <h4 class="blue">Phone</h4>
+            <ul>
+                <li class="white">
+                    +61 040 400 4000
+                </li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4 class="blue">Email</h4>
+            <ul>
+                <li class="white">
+                    automotive@carsales.com.au
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    
+    -->
+    <script src="script.js">
+        
+    </script>
+    <script>
+  const scriptURL = 'https://docs.google.com/spreadsheets/d/1ZDIMQGhJstsQrEHxlqsBDIM1wumjPKdRUDwiG9E7dR0/edit?usp=sharing'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById('msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {msg.innerHTML="Message sent sucessfully"
+      setTimeout(function(){
+        msg.innerHTML=""
+      },5000)
+      form.reset()
+    }
+      )
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
