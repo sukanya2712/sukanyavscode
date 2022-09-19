@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    margin-top: 250px;
+    justify-content: center;
+    align-items: center;
+   
+    /* text-align: center; */
+}
+
+#firstbox{
+    height:200px;
+    width:200px;
+    background-color: aqua;
+   
+}
+
+#seacond{
+    height:100px;
+    width:100px;
+    background-color: blue;
+    position:relative;
+    left:100px;
+    top:100px;
+}

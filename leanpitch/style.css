@@ -1,0 +1,757 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+
+navbar{
+    z-index: 5;
+    width:100%;
+    height:45px;
+    line-height: 40px;
+    padding:opx 100px;
+    position: fixed;
+    margin-top: 0%;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(89,89,92,0.9867297260701156) 0%);
+}
+
+#subscribe{
+    background-color: red;
+}
+
+navbar .logo h4{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color:aliceblue;
+    
+}
+
+navbar ul{
+    float: right;
+
+}
+
+navbar li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+navbar li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding:0px 30px;
+    color:white;
+    text-decoration: none;
+}
+
+.main{
+
+    background-image: url(shutterstock_758264113.jpg);
+    width:100%;
+    height:100vh;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+   
+}
+  .tra{
+    position: absolute;
+    width:75vw;
+    margin-top: 45px;
+    z-index: 2;
+    margin-left:20vw;
+    height:90vh;
+    border: 5px solid yellow;
+    opacity: 1.5;
+    display:none;
+}
+
+
+
+.main .tags{
+    width:19vw;
+    height:80vh;
+    padding:10px;
+    margin-left: 1rem;
+    position:
+    absolute;
+    margin-top:45px;
+    z-index: 2;
+    
+}
+
+ 
+.main h2{
+    margin-bottom:30px;
+}
+
+.main h2 a{
+    color:aliceblue;
+    text-decoration: none;
+    
+   
+}
+
+.webina{
+        z-index: 2;
+        position: absolute;
+        width:75vw;
+        margin-top: 45px;
+        z-index: 2;
+        margin-left:20vw;
+        height:90vh;
+        border: 5px solid yellow;
+        opacity: 1.5;
+        display: none;
+}
+
+.confe{
+    z-index: 2;
+    position: absolute;
+    width:75vw;
+    margin-top: 45px;
+    z-index: 2;
+    margin-left:20vw;
+    height:90vh;
+    border: 5px solid yellow;
+    opacity: 1.5;
+    text-align: center;
+    color: aliceblue;
+    display: none;
+}
+
+.speakseriess{
+    z-index: 2;
+    position: absolute;
+    width:75vw;
+    margin-top: 45px;
+    z-index: 2;
+    margin-left:20vw;
+    height:90vh;
+    border: 5px solid yellow;
+    opacity: 1.5;
+    text-align: center;
+    color: aliceblue;
+    display: none;
+}
+
+.podcastss{
+    z-index: 2;
+    position: absolute;
+    width:75vw;
+    margin-top: 45px;
+    z-index: 2;
+    margin-left:20vw;
+    height:90vh;
+    border: 5px solid yellow;
+    opacity: 1.5;
+    text-align: center;
+    color: aliceblue;
+    display: none;
+}
+
+.blogss{
+    z-index: 2;
+    position: absolute;
+    width:75vw;
+    margin-top: 45px;
+    z-index: 2;
+    margin-left:20vw;
+    height:90vh;
+    border: 5px solid yellow;
+    opacity: 1.5;
+    text-align: center;
+    color: aliceblue;
+    display: none;
+}
+
+
+.vidi{
+    z-index: 2;
+    position: absolute;
+    width:75vw;
+    margin-top: 45px;
+    z-index: 2;
+    margin-left:20vw;
+    height:90vh;
+    border: 5px solid yellow;
+    opacity: 1.5;
+    text-align: center;
+    color: aliceblue;
+    display: none;
+}
+
+.webie{
+    background-image: url(wp1867861.jpg);
+  width:15vw;
+  height:30vh;
+  margin: auto;
+  
+  background-size: cover;
+  background-position: center;
+}
+
+.webcar{
+    margin-top: 25px;
+    color: yellow;
+    position: relative;
+    top: 22vh;
+    font-weight: bold;
+
+}
+
+.meet{
+    z-index: 2;
+    position: absolute;
+    width:75vw;
+    margin-top: 45px;
+    z-index: 2;
+    margin-left:20vw;
+    height:90vh;
+    border: 5px solid yellow;
+    opacity: 1.5;
+    display: none;
+}
+
+.imp{
+    background-color: yellow;
+    color: black;
+    width: 18.5vw;
+}
+.meet p{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: whitesmoke;
+}
+
+.webinar{
+    width:100vw;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.meetups{
+    width:100vw;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.conferences{
+    margin: auto;
+    width:80vw;
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 100px;
+    background-color: black;
+    padding: 20px;
+}
+
+.videos{
+    margin: auto;
+    width:100vw;
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+.videos h1{
+    font-size: 100px;
+    margin-bottom: 35px;
+}
+
+.vae3{
+    margin: auto;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.vae33{
+    margin:15px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.va1{
+    background-image: url(vae1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+    width: 540px;
+    border: 1px solid black;
+}
+
+.va11{
+    background-image: url(vae1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    width: 450px;
+    border: 1px solid black;
+}
+
+.va2{
+    background-image: url(vae2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+    width: 540px;
+    border: 3px solid black;
+}
+
+.va22{
+    background-image: url(vae2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 285px;
+    width: 400px;
+    border: 3px solid black;
+}
+
+.va1:hover{
+    cursor: pointer;
+    transform: translateY(5px);
+    border: 5px solid yellow;
+}
+
+.va2:hover{
+    cursor: pointer;
+    transform: translateY(5px);
+    border: 5px solid yellow;
+}
+
+
+
+.speakseries{
+    margin: auto;
+    width:100vw;
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+.blogs{
+    margin: auto;
+    width:100vw;
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+.podcasts{
+    margin: auto;
+    width:100vw;
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+.pme1{
+    background-image: url(pme1.jpg);
+    height: 230px;
+    width: 340px
+}
+
+.pm2{
+    background-image: url(pme2.jpg);
+    height: 230px;
+    width: 340px
+}
+
+.pm3{
+    background-image: url(pme3.jpg);
+    height: 230px;
+    width: 340px
+}
+
+.pm4{
+    background-image: url(pme4.jpg);
+    height: 230px;
+    width: 340px
+}
+
+.pc1{
+    background-image: url(pc1.jpg);
+    width: 307px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.pc2{
+    background-image: url(pc2.jpg);
+    width: 307px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.pc3{
+    background-image: url(pc3.jpg);
+    width: 307px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.pc4{
+    background-image: url(pc4.jpg);
+    width: 307px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.pme{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 5px;
+}
+
+.arrow{
+    position: relative;
+    margin-top: 50px;
+    background-image: url(arr.jpg);
+    width: 80px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+
+}
+.webinar h1{
+    font-size: 80px;
+    margin-bottom: 25px;
+}
+
+.speakseries h1{
+    font-size: 80px;
+    margin-bottom: 25px;
+}
+
+
+.blogs h1{
+    margin-top: 10px;
+    font-size: 80px;
+    margin-bottom: 25px;
+    
+}
+
+.podcasts h1{
+    margin-top: 10px;
+    font-size: 80px;
+    margin-bottom: 25px;
+    
+}
+
+.bge{
+    display: grid;
+    grid-template-columns: auto auto auto auto 100px;
+    margin: 5px;
+}
+
+.pdc{
+    display: grid;
+    grid-template-columns: auto auto auto auto 100px;
+    margin: 5px;
+    
+}
+
+.pm1{
+    background-image: url(pm1.jpg);
+    height: 210px;
+    width:320px;
+}
+
+.bg2{
+    background-image: url(bg2.jpg);
+    height: 210px;
+    width:320px;
+}
+
+.bg3{
+    background-image: url(bg3.jpg);
+    height: 210px;
+    width:320px;
+}
+
+.bg4{
+    background-image: url(bg4.jpg);
+    height: 210px;
+    width:320px;
+}
+
+
+
+.conferences h1{
+    margin-top: 10px;
+    font-size: 80px;
+    margin-bottom: 15px;
+    color: aliceblue;
+}
+
+.par{
+    margin-top: 30px;
+}
+.meetups h1{
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.conferences p{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: aliceblue;
+}
+
+.webi{
+  background-image: url(wp1867861.jpg);
+  width:15vw;
+  height:30vh;
+  margin: auto;
+  
+  background-size: cover;
+  background-position: center;
+}
+
+.webcard {
+    margin-top: 25px;
+    color: yellow;
+    position: relative;
+    top: 22vh;
+    font-weight: bold;
+
+}
+
+ .a{
+    width:150px;
+    height:50px;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+.ab{
+    width:150px;
+    height:50px;
+    padding: 10px;
+    background-color:aliceblue;
+    color: black;
+    text-align: center;
+    border-color: aliceblue;
+}
+
+ .b{
+    width:80px;
+    height:50px;
+    position: relative;
+    right: 5px;
+    padding: 10px;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+}
+
+.bc{
+    width:80px;
+    height:50px;
+    position: relative;
+    right: 5px;
+    padding: 10px;
+    background-color: black;
+    color:aliceblue;
+    text-align: center;
+    border-color: aliceblue;
+}
+.container{
+    background-color: black;
+    width: 80vw;
+}
+.container .pic{
+    background-image: url(about.jpg);
+    width:100%;
+    height:100vh;
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.container button{
+    display: flex;
+    margin: auto;
+    padding:13px;
+    width:15rem;
+    border-color: aliceblue;
+    color: aliceblue;
+    background-color: black;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    
+}
+
+.container{
+    background-color: black;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.container .labs h3{
+    color: red;
+  margin-left: 40%;
+ margin-bottom: 5%;
+
+}
+
+.container .our h3{
+    color:
+    aliceblue;
+    margin-left: 45%;
+}
+.container .labs p{
+    color:aliceblue;
+    margin-left:5%;
+    margin-right: 5%;
+}
+
+.container .labs .ton{
+    display:grid;
+    grid-template-columns: auto auto;
+   
+    color: aliceblue;
+    border-color: aliceblue;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.container .labs .ton button{
+    margin-top: 5%;
+    background-color: red;
+}
+
+.notify{
+    color: aliceblue;
+    border-color: aliceblue;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    
+    margin: auto;
+    background-color: red;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+#train{
+   
+border: 1px slid yellow;
+
+   
+/* margin-left: 170px; */
+   
+display:
+   grid;
+   grid-template-columns:
+   
+auto auto auto auto auto;
+}
+
+#train .cards{
+    margin: 8px;
+}
+
+#train .cards .text-head{
+    color: aliceblue;
+}
+
+#train .cards .text-muted{
+    color: aliceblue;
+}
+
+#trainings{
+    display:
+    grid;
+    grid-template-columns:auto auto auto auto auto;
+   
+}
+
+#trainings .cards{
+ 
+    margin:10px;
+    border: 1px solid white;
+}
+
+ #trainings .cards .car{
+    display:flex;
+    flex-direction:column; 
+    height:max-content;
+   
+ }
+
+ #trainings .cards .car button{
+   width:4rem;
+   padding:0.5px;
+   color: black;
+   background-color: aliceblue;
+ }
+ 
+ #trainings .cards .car .date{
+    background-color:#b4b4b4;
+    margin-top:1.5px;
+    margin-bottom: 1.5px;;
+ }
+    
+    
+
+#trainings .cards .text-head{
+    color: aliceblue;
+}
+
+#trainings .cards .text-muted{
+    color: aliceblue;
+}
+
+ .cards:nth-child(even){
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 29%);
+}
+
+.cards:nth-child(odd){
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(89,89,92,0.9867297260701156) 99%);
+}
+
+.tonn button{
+    position: absolute;
+    right: 4%;
+    background-color: orange;
+    color: aliceblue;
+    height: 50px;
+    width: 200px;
+    border: none;
+}
+
+.tonn{
+    height: 10vh;
+  margin-bottom: 2%;
+  
+}

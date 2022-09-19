@@ -7,7 +7,7 @@
     <title>Social media website</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.5/css/unicons.css">
-
+    <script src="script.js" defer></script>
     
 </head>
 <body>
@@ -35,7 +35,7 @@
             <div class="left">
                 <a class="profile">
                     <div class="profile-photo">
-                        <img src="./ images/profile-1.jpg">
+                        <img src="./images/profile-1.jpg">
                     </div>
                     <div class="handle">
                         <h4>Diana Ayi</h4>
@@ -52,8 +52,8 @@
                 <a class="menu-item">
                       <span><i class="uil uil-compass"></i></span><h3>Explore</h3>
                 </a>
-                <a class="menu-item" id="notofiactions">
-                      <span><i class="uil uil-bell"></i><small class="notification-count">9+</small></span><h3>Notifications</h3>
+                <a class="menu-item" id="notifications">
+                      <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h3>Notifications</h3>
                       <div class="notifications-popup">
                         <div>
                             <div class="profile-photo">
@@ -71,10 +71,25 @@
                                 <b>keke benjamin</b>accepted your req<small class="text-muted">2days ago</small>
                             </div>
                         </div>
-                                 
+                        <div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-4.jpg" alt="">
+                            </div>
+                            <div class="notification-body">
+                                <b>keke benjamin</b>accepted your req<small class="text-muted">2days ago</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-5.jpg" alt="">
+                            </div>
+                            <div class="notification-body">
+                                <b>keke benjamin</b>accepted your req<small class="text-muted">2days ago</small>
+                            </div>
+                        </div>       
                       </div>
                 </a>
-                <a class="menu-item" id="messages-notifications">
+                <a class="menu-item" id="messages-notification">
                       <span><i class="uil uil-envelope-alt" ><small class="notification-count">6 new messages</small></i></span><h3>Messagse</h3>
                 </a>
                 <a class="menu-item">
@@ -83,10 +98,10 @@
                 <a class="menu-item">
                       <span><i class="uil uil-chart-line"></i></span><h3>Analytics</h3>
                 </a>
-                <a class="menu-item">
+                <a class="menu-item" id="theme">
                       <span><i class="uil uil-palette"></i></span><h3>Theme</h3>
                 </a>
-                <a class="menu-item">
+                <a class="menu-item ">
                       <span><i class="uil uil-setting"></i></span><h3>Settings</h3>
                 </a>
               </div>
@@ -100,13 +115,13 @@
                 <div class="stories">
                        <div class="story">
                         <div class="profile-photo">
-                            <img src="./images/profile-1.jpg" alt="" class="src">
+                            <img src="./images/profile-8.jpg" alt="" class="src">
                         </div>
                         <p class="name">your story</p>
                         </div>
                         <div class="story">
                             <div class="profile-photo">
-                                <img src="/images/profile-8.jpg" alt="" class="src">
+                                <img src="/images/profile-12.jpg" alt="" class="src">
                             </div>
                             <p class="name">lilla james</p>
                         </div>
@@ -132,7 +147,7 @@
 
                 <form action="" class="create-post">
                     <div class="profile-photo">
-                        <img src="./images/profile-1/jpg">
+                        <img src="images/profile-1.jpg">
                     </div>
                     <input type="text" placeholder="whats on your mind" id="create-post">
                     <input type="submit" value="post" class="btn btn-primary">
@@ -145,7 +160,7 @@
                                 <div class="profile-photo">
                                     <img src="./images/profile-13.jpg" alt="">
                                 </div>
-                                <div class="logo">
+                                <div class="info">
                                     <h3>lena pose</h3>
                                     <small>dubai,15 hours ago</small>
                                 </div>
@@ -153,13 +168,13 @@
                             <span class="edit">
                                 <i class="uil uil-ellipsis-h"></i>
                             </span>
-                        </div>
-                    </div>
+                       </div>
 
                         <div class="photo">
                             <img src="./images/feed-1.jpg" alt="">
                         </div>
-                        <div class="action-button">
+
+                        <div class="action-buttons">
                             <div class="interaction-buttons">
                                  <span><i class="uil uil-heart"></i></span>
                                  <span><i class="uil uil-comment-dots"></i></span>
@@ -169,138 +184,111 @@
                                 <span><i class="uil uil-bookmark-full"></i></span>
                             </div>
                         </div>
+
                         <div class="liked-by">
-                            <span><img src=",.images/prifile-10" alt=""></span>
-                            <span><img src=",.images/prifile-4" alt=""></span>
-                            <span><img src=",.images/prifile-15" alt=""></span>
+                            <span><img src="images/profile-10.jpg" alt=""></span>
+                            <span><img src="images/profile-4.jpg" alt=""></span>
+                            <span><img src="images/profile-15.jpg" alt=""></span>
                             <p>Liked by<b>priya</b>and<b>234 others</b></p>
                         </div>
                         <div class="caption">
-                            <p><b>lana pose</b>Lorem ipsum fjhrf jfnigh <span class="harsh-tag">#lifestyke</span>  </p>
+                            <p><b>lana pose</b>Lorem ipsum fjhrf jfnigh <span class="harsh-tag">#lifestyke</span></p>
                         </div>
                         <div class="comments text-muted">view all comments</div>
                     </div>
+
+                    
                     <div class="feed">
-                        <div class="head">
-                            <div class="user">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-13.jpg" alt="">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./images/profile-13.jpg" alt="">
                                 </div>
-                                <div class="logo">
-                                    <h3>lena pose</h3>
-                                    <small>dubai,15 hours ago</small>
+                                <div class="info">
+                                        <h3>lena pose</h3>
+                                        <small>dubai,15 hours ago</small>
+                                    </div>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                           </div>
+    
+                            <div class="photo">
+                                <img src="./images/feed-1.jpg" alt="">
+                            </div>
+    
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                     <span><i class="uil uil-heart"></i></span>
+                                     <span><i class="uil uil-comment-dots"></i></span>
+                                     <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
                                 </div>
                             </div>
-                            <span class="edit">
-                                <i class="uil uil-sllipsis-h"></i>
-                            </span>
-                        </div>
-                        <div class="photo">
-                            <img src="./images/feed-1.jpg" alt="">
-                        </div>
-                        <div class="action-button">
-                            <div class="interaction-button">
-                                 <span><i class="uil uil-heart"></i></span>
-                                 <span><i class="uil uil-comment-dots"></i></span>
-                                 <span><i class="uil uil-share-alt"></i></span>
+    
+                            <div class="liked-by">
+                                <span><img src="images/profile-10.jpg" alt=""></span>
+                                <span><img src="images/profile-4.jpg" alt=""></span>
+                                <span><img src="images/profile-15.jpg" alt=""></span>
+                                <p>Liked by<b>priya</b>and<b>234 others</b></p>
                             </div>
-                            <div class="bookmark">
-                                <span><i class="uil uil-bookmark-full"></i></span>
+                            <div class="caption">
+                                <p><b>lana pose</b>Lorem ipsum fjhrf jfnigh <span class="harsh-tag">#lifestyke</span></p>
+                            </div>
+                            <div class="comments text-muted">view all comments</div>
+                    </div>
+
+                        
+                    <div class="feed">
+                                <div class="head">
+                                    <div class="user">
+                                        <div class="profile-photo">
+                                            <img src="./images/profile-13.jpg" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <h3>lena pose</h3>
+                                            <small>dubai,15 hours ago</small>
+                                        </div>
+                                    </div>
+                                    <span class="edit">
+                                        <i class="uil uil-ellipsis-h"></i>
+                                    </span>
+                               </div>
+        
+                                <div class="photo">
+                                    <img src="./images/feed-1.jpg" alt="">
+                                </div>
+        
+                                <div class="action-buttons">
+                                    <div class="interaction-buttons">
+                                         <span><i class="uil uil-heart"></i></span>
+                                         <span><i class="uil uil-comment-dots"></i></span>
+                                         <span><i class="uil uil-share-alt"></i></span>
+                                    </div>
+                                    <div class="bookmark">
+                                        <span><i class="uil uil-bookmark-full"></i></span>
+                                    </div>
+                                </div>
+        
+                                <div class="liked-by">
+                                    <span><img src="images/profile-10.jpg" alt=""></span>
+                                    <span><img src="images/profile-4.jpg" alt=""></span>
+                                    <span><img src="images/profile-15.jpg" alt=""></span>
+                                    <p>Liked by<b>priya</b>and<b>234 others</b></p>
+                                </div>
+                                <div class="caption">
+                                    <p><b>lana pose</b>Lorem ipsum fjhrf jfnigh <span class="harsh-tag">#lifestyke</span></p>
+                                </div>
+                                <div class="comments text-muted">view all comments</div>
                             </div>
                         </div>
-                        <div class="liked-by">
-                            <span><img src=",.images/prifile-10" alt=""></span>
-                            <span><img src=",.images/prifile-4" alt=""></span>
-                            <span><img src=",.images/prifile-15" alt=""></span>
-                            <p>Liked by<b>priya</b></p>
-                        </div>
-                        <div class="caption">
-                            <p><b>lana pose</b>Lorem ipsum fjhrf jfnigh <span class="harsh-tag">#lifestyke</span>  </p>
-                        </div>
-                        <div class="comments text-muted">view all comments</div>
                     </div>
-                </div>
-                <div class="feed">
-                    <div class="head">
-                        <div class="user">
-                            <div class="profile-photo">
-                                <img src="./images/profile-13.jpg" alt="">
-                            </div>
-                            <div class="logo">
-                                <h3>lena pose</h3>
-                                <small>dubai,15 hours ago</small>
-                            </div>
-                        </div>
-                        <span class="edit">
-                            <i class="uil uil-sllipsis-h"></i>
-                        </span>
-                    </div>
-                    <div class="photo">
-                        <img src="./images/feed-1.jpg" alt="">
-                    </div>
-                    <div class="action-button">
-                        <div class="interaction-button">
-                             <span><i class="uil uil-heart"></i></span>
-                             <span><i class="uil uil-comment-dots"></i></span>
-                             <span><i class="uil uil-share-alt"></i></span>
-                        </div>
-                        <div class="bookmark">
-                            <span><i class="uil uil-bookmark-full"></i></span>
-                        </div>
-                    </div>
-                    <div class="liked-by">
-                        <span><img src="./images/prifile-10" alt=""></span>
-                        <span><img src="./images/prifile-4" alt=""></span>
-                        <span><img src="./images/profile-15" alt=""></span>
-                        <p>Liked by<b>priya</b></p>
-                    </div>
-                    <div class="caption">
-                        <p><b>lana pose</b>Lorem ipsum fjhrf jfnigh <span class="harsh-tag">#lifestyke</span>  </p>
-                    </div>
-                    <div class="comments text-muted">view all comments</div>
-                </div>
-            </div>
-            <div class="feed">
-                <div class="head">
-                    <div class="user">
-                        <div class="profile-photo">
-                            <img src="./images/profile-13.jpg" alt="">
-                        </div>
-                        <div class="logo">
-                            <h3>lena pose</h3>
-                            <small>dubai,15 hours ago</small>
-                        </div>
-                    </div>
-                    <span class="edit">
-                        <i class="uil uil-sllipsis-h"></i>
-                    </span>
-                </div>
-                <div class="photo">
-                    <img src="./images/feed-1.jpg" alt="">
-                </div>
-                <div class="action-button">
-                    <div class="interaction-button">
-                         <span><i class="uil uil-heart"></i></span>
-                         <span><i class="uil uil-comment-dots"></i></span>
-                         <span><i class="uil uil-share-alt"></i></span>
-                    </div>
-                    <div class="bookmark">
-                        <span><i class="uil uil-bookmark-full"></i></span>
-                    </div>
-                </div>
-                <div class="liked-by">
-                    <span><img src="./images/profile-10" alt=""></span>
-                    <span><img src="./images/profile-4" alt=""></span>
-                    <span><img src="./images/profile-15" alt=""></span>
-                    <p>Liked by<b>priya</b></p>
-                </div>
-                <div class="caption">
-                    <p><b>lana pose</b>Lorem ipsum fjhrf jfnigh <span class="harsh-tag">#lifestyke</span>  </p>
-                </div>
-                <div class="comments text-muted">view all comments</div>
-            </div>
-           </div>
-        </div>
+                    
+                
+           
         
 
             <div class="right">
@@ -310,27 +298,28 @@
                     </div>
                     <div class="search-bar">
                         <i class="uil uil-search"></i>
-                        <input type="search" placeholder="search ,essages " id="message-search">
+                        <input type="search" placeholder="search messages " id="message-search">
                     </div>
 
                     <div class="category">
                         <h6 class="active">primary</h6>
-                        <h6 >general</h6>
+                        <h6>general</h6>
                         <h6 class="message-requests">Request(2)</h6>
                     </div>
 
                     <div class="message">
                         <div class="profile-photo">
-                            <img src="./images/profilr-17.jpg" alt="">
+                            <img src="./images/profile-17.jpg" alt="">
                         </div>
                         <div class="message-body">
                             <h5>edem</h5>
-                            <p class="text-bold">just wole up</p>
+                            <p class="text-muted">just woke up</p>
                         </div>
                     </div>
                     <div class="message">
                         <div class="profile-photo">
-                            <img src="./images/profilr-17.jpg" alt="">
+                            <img src="./images/profile-17.jpg" alt="">
+                            <div class="active"></div>
                         </div>
                         <div class="message-body">
                             <h5>edem</h5>
@@ -349,27 +338,26 @@
                 </div>
 
                 <div class="friend-requests">
-                    <h4>Requesr</h4>
+                    <h4>Request</h4>
                     <div class="request">
                         <div class="info">
                             <div class="profile-photo">
-                                <img src="./images/prifile-13.jpg" alt="">
+                                <img src="./images/profile-13.jpg" alt="">
                             </div>
                             <div>
                                <h5>hajja</h5>
                                 <p class="text-muted">
-                                    8 fried
+                                    8 mutual friends
                                 </p>
                             </div>
-                            <div class="action">
-                                 <button class="btn btn-primary">
-                                    Accept
-                                 </button>
-                                 <button class="btn">
-                                    Decline
-                                 </button>
-                            </div>
-                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                               Accept
+                            </button>
+                            <button class="btn">
+                               Decline
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -380,7 +368,7 @@
     <div class="customize-theme">
         <div class="card">
             <h2>Customize your theme</h2>
-            <p class="text-muted">manage font size,colr and background</p>
+            <p class="text-muted">manage font size,color and background</p>
 
             <div class="font-size">
                 <h4>Font size</h4>
@@ -428,7 +416,7 @@
         </div>
 
     </div>
-    <script src="index.js"></script>
+    
 </body>
 </html>
 

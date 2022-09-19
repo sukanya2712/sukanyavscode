@@ -51,7 +51,7 @@ body{
     margin:0 auto;
    }
 
-.profile-{
+.profile-photo{
     width:2.7rem;
     aspect-ratio:1/1;
     border-radius:50%;
@@ -92,7 +92,7 @@ img{
 
 nav{
     width:100%;
-    background:var(-- color-white);
+    background:var(--color-white);
     padding:0.7rem 0;
     position:fixed;
     top:0;
@@ -105,7 +105,7 @@ nav .container{
     justify-content:space-between;
 }
 
-.search-bar{
+ .search-bar{
  background:var(--color-light);
  border-radius:var(--border-radius);
  padding:var(--search-padding);
@@ -260,6 +260,7 @@ main .container .left .profile{
     box-shadow: 0 0 2rem hsl(var(--color-primary),75% 60% 25%);
     z-index:8;
     display: none;
+    
 }
 
 .left .notifications-popup::before{
@@ -271,7 +272,7 @@ main .container .left .profile{
     background: var(--color-white);
     position:absolute;
     left:-0.6rem;
-    transform:rotate(45);
+    transform:rotate(45deg);
 }
 
 .left .notifications-popup > div{
@@ -281,7 +282,7 @@ main .container .left .profile{
     margin-bottom: 1rem;
 }
 
-.left .notification-popup small{
+.left .notifications-popup small{
    display: block;
 }
 
@@ -290,7 +291,7 @@ main .container .left .profile{
     justify-content: space-between;
     height:12rem;
     gap:0.5rem;
-    background: red;
+    
 }
 
 .middle .stories .story{
@@ -346,16 +347,16 @@ main .container .left .profile{
 }
    
 .middle .stories .story:nth-child(5){
-    background: url('./images/story-1.jpg')
+    background: url('./images/story-5.jpg')
     no-repeat center center/cover;
 }
    
 .middle .stories .story:nth-child(6){
-    background: url('./images/story-1.jpg')
+    background: url('./images/story-6.jpg')
     no-repeat center center/cover;
 }
    
-.middle .story .prifile-photo{
+.middle .story .profile-photo{
     width:2rem;
     height:2rem;
     align-self:start;
@@ -482,15 +483,23 @@ main .container .right{
     font-size: 0.85rem;
 }
 
+.right .messages .category .active{
+   border-color: var(--color-dark);
+}
+
 .right .messages .message{
     display: flex;
-    gap:1rem;
+    gap: 1rem;
     margin-bottom: 1rem;
     align-items: start;
 }
 
+.right .messages .message:last-child{
+    margin: 0;
+}
+
 .right .messages .message p{
-    font-size:0.8rem;
+    font-size: 0.8rem;
 }
 
 .right .message .profile-photo{
@@ -523,7 +532,7 @@ main .container .right{
 
 .right .friend-requests h4{
     color:var(--color-gray);
-    margin-bottom:1rem 0;
+    margin:1rem 0;
 }
 
 .right .request{
@@ -564,7 +573,7 @@ main .container .right{
     padding:3rem;
     border-radius: var(--card-border-radius);
     width:50%;
-    box-shadow: 0 0 1rem var(--color-primary);
+    /* box-shadow: 0 0 1rem var(--color-primary); */
 }
 
 .customize-theme .font-size{
@@ -581,7 +590,7 @@ main .container .right{
 }
 
 .customize-theme .choose-size{
-    background: var(--color-seacondary);
+    background: var(--color-secondary);
     height:0.3rem;
     width:100%;
     margin:0 1rem;
@@ -593,13 +602,13 @@ main .container .right{
 .customize-theme .choose-size span{
     width:1rem;
     height:1rem;
-    background: var(--color-seacondary);
+    background: var(--color-secondary);
     border-radius: 50%;
     cursor:pointer;
 }
 
 .customize-theme .choose-size span.active{
-    background-color: var(--color-primary);
+    background: var(--color-primary);
 
 }
 
@@ -620,7 +629,7 @@ main .container .right{
     width: 2.2rem;
     height: 2.2rem;
     border-radius: 50%;
-
+    
 }
 
 .customize-theme .choose-color span:nth-child(1){
@@ -650,6 +659,10 @@ main .container .right{
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
+}
+
+.customize-theme .background{
+    margin-top: 2rem;
 }
 
 .customize-theme .choose-bg > div{
@@ -720,6 +733,8 @@ main .container .right{
     .customize-theme .card{
         width:80vw;
     }
+
+
 }
 
 @media screen and (max-width:992px) {
@@ -752,9 +767,7 @@ main .container .right{
        width: 20rem;
    }
 
-   main .container .left .sidebar > div h3{
-    display: none;
-   }
+  
 
    main .container .middle{
     grid-column: 1/3;
@@ -766,7 +779,7 @@ main .container .right{
 
    .customize-theme .card{
     width:92vw;
-   }
+   } 
 }
 
 
